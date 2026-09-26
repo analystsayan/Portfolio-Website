@@ -1,0 +1,12 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Profile placeholder">
+  <rect width="400" height="400" fill="#161F2C"/>
+  <g opacity="0.6" stroke="#29384A" stroke-width="1">
+    <line x1="0" y1="100" x2="400" y2="100"/>
+    <line x1="0" y1="200" x2="400" y2="200"/>
+    <line x1="0" y1="300" x2="400" y2="300"/>
+    <line x1="100" y1="0" x2="100" y2="400"/>
+    <line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="400"/>
+  </g>
+  <text x="200" y="222" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="96" fill="#F5A623">SM</text>
+</svg>

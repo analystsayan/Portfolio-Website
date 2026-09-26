@@ -1,0 +1,37 @@
+<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sales and inventory analytics project cover">
+  <rect width="640" height="360" fill="#101927"/>
+  <g opacity="0.5">
+    <line x1="0" y1="60" x2="640" y2="60" stroke="#29384A" stroke-width="1"/>
+    <line x1="0" y1="130" x2="640" y2="130" stroke="#29384A" stroke-width="1"/>
+    <line x1="0" y1="200" x2="640" y2="200" stroke="#29384A" stroke-width="1"/>
+    <line x1="0" y1="270" x2="640" y2="270" stroke="#29384A" stroke-width="1"/>
+  </g>
+  <!-- bar chart -->
+  <g>
+    <rect x="60" y="190" width="34" height="90" fill="#1B2532" stroke="#2DD4BF" stroke-width="1.5"/>
+    <rect x="106" y="150" width="34" height="130" fill="#1B2532" stroke="#2DD4BF" stroke-width="1.5"/>
+    <rect x="152" y="210" width="34" height="70" fill="#1B2532" stroke="#2DD4BF" stroke-width="1.5"/>
+    <rect x="198" y="120" width="34" height="160" fill="#1B2532" stroke="#F5A623" stroke-width="2"/>
+    <rect x="244" y="170" width="34" height="110" fill="#1B2532" stroke="#2DD4BF" stroke-width="1.5"/>
+  </g>
+  <!-- revenue trend line -->
+  <polyline points="60,110 106,95 152,120 198,70 244,100 290,60" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#F5A623">
+    <circle cx="60" cy="110" r="3.5"/>
+    <circle cx="106" cy="95" r="3.5"/>
+    <circle cx="152" cy="120" r="3.5"/>
+    <circle cx="198" cy="70" r="3.5"/>
+    <circle cx="244" cy="100" r="3.5"/>
+    <circle cx="290" cy="60" r="3.5"/>
+  </g>
+  <!-- database / schema glyph -->
+  <g transform="translate(400,70)" stroke="#8B97A8" stroke-width="1.6" fill="none">
+    <ellipse cx="90" cy="18" rx="70" ry="16"/>
+    <path d="M20 18 V150 C20 159 51 167 90 167 C129 167 160 159 160 150 V18"/>
+    <path d="M20 62 C20 71 51 79 90 79 C129 79 160 71 160 62"/>
+    <path d="M20 106 C20 115 51 123 90 123 C129 123 160 115 160 106"/>
+  </g>
+  <text x="410" y="270" font-family="'IBM Plex Mono', monospace" font-size="13" fill="#8B97A8">SELECT product, SUM(qty)</text>
+  <text x="410" y="292" font-family="'IBM Plex Mono', monospace" font-size="13" fill="#8B97A8">FROM orders GROUP BY product;</text>
+  <text x="60" y="330" font-family="'Space Grotesk', sans-serif" font-size="20" fill="#E7EDF3">Sales &amp; Inventory Analytics</text>
+</svg>

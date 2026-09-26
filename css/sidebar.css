@@ -43,10 +43,10 @@ aside.closed {
     transition: all 0.3s ease;
 }
 .sidebar > .sidebardiv > ul > li:first-child .logo {
-    font-weight: 600;
+    font-family: monospace;
     color: var(--text);
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.2em;
     margin: 0;
     transition: all 0.3s ease-in-out;
 }
@@ -107,8 +107,8 @@ aside.closed {
 
 /* Close menu button (mobile) */
 .sidebar-close {
-    height: 32px !important;
-    width: 32px !important;
+    height: 24px;
+    width: 24px;
     position: relative;
     margin-left: auto;
     cursor: pointer;

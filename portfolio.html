@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sayan Mondal — Data Analyst</title>
+<meta name="description" content="Portfolio of Sayan Mondal, Data Analyst — SQL, Python, Power BI. Projects, experience, and certifications." />
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/portfolio.css" />
+<script src="https://kit.fontawesome.com/f8f6c1c8c1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="profile"></div>
+
+<!-- ambient glow background for the glass panels to blur against -->
+<div class="bg-glow" aria-hidden="true">
+  <span class="glow glow--a"></span>
+  <span class="glow glow--b"></span>
+  <span class="glow glow--c"></span>
+  <div class="bg-grid"></div>
+</div>
+
+<!-- top floating pill: brand + theme + resume -->
+<header class="topbar">
+  <a class="brand glass" href="/">Analyst Sayan</a>
+  <div class="topbar__actions">
+    <a id="resume-link" class="btn btn--primary glass" href="assets/resume/SayanMondal_DataAnalyst.pdf" download>Résumé</a>
+    <button id="theme-toggle" class="theme-toggle glass" aria-pressed="false" aria-label="Toggle light and dark theme">
+      <i class="fa-solid fa-circle-half-stroke"></i>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__media">
+      <div class="hero__photo-ring glass">
+        <img id="hero-photo" src="" alt="Sayan Mondal" width="320" height="320" />
+      </div>
+    </div>
+
+    <div class="hero__text">
+      <p class="eyebrow mono">Data Analyst · Kolkata, India</p>
+      <h1 id="hero-name" class="hero__name"></h1>
+      <p id="hero-summary" class="hero__summary"></p>
+
+      <div id="hero-stats" class="hero__stats"></div>
+
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View projects</a>
+        <a href="assets/resume/Sayan_Mondal_Resume.pdf" class="btn btn--ghost glass" download>Download résumé</a>
+      </div>
+
+      <div id="hero-socials" class="hero__socials"></div>
+    </div>
+    <span id="hero-role" class="visually-hidden"></span>
+  </section>
+
+  <!-- ABOUT / EDUCATION -->
+  <section id="about" class="section">
+    <div class="section__head">
+      <h2>About</h2>
+      <span class="section__rule"></span>
+    </div>
+    <div id="education-content" class="edu glass-panel"></div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section__head">
+      <h2>Projects</h2>
+      <span class="section__rule"></span>
+    </div>
+    <div id="projects-content" class="projects"></div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="section__head">
+      <h2>Experience</h2>
+      <span class="section__rule"></span>
+    </div>
+    <div id="experience-content" class="timeline glass-panel"></div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="section__head">
+      <h2>Skills</h2>
+      <span class="section__rule"></span>
+    </div>
+    <div id="skills-content" class="skills glass-panel"></div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <div class="section__head">
+      <h2>Certifications</h2>
+      <span class="section__rule"></span>
+    </div>
+    <div id="certifications-content" class="certs glass-panel"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section--contact">
+    <div class="section__head">
+      <h2>Contact</h2>
+      <span class="section__rule"></span>
+    </div>
+    <div class="contact glass-panel">
+      <p class="contact__lead">Open to Data Analyst roles — reach out directly.</p>
+      <dl class="contact__list">
+        <div>
+          <dt>Email</dt>
+          <dd><a id="contact-email" class="mono" href="#"></a></dd>
+        </div>
+        <div>
+          <dt>Phone</dt>
+          <dd><span id="contact-phone" class="mono"></span></dd>
+        </div>
+        <div>
+          <dt>Location</dt>
+          <dd><span id="contact-location" class="mono"></span></dd>
+        </div>
+      </dl>
+      <a href="mailto:work.mondalsayan@gmail.com" class="btn btn--primary">Say hello</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <nav id="footer-nav" class="footer-nav">
+    <a href="#profile">Profile</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div id="footer-socials" class="footer-socials"></div>
+  <p class="footer-copy"><span id="footer-name"></span> · <span id="footer-year"></span></p>
+</footer>
+
+<!-- fixed floating bottom dock -->
+<nav id="dock" class="dock glass" aria-label="Section navigation">
+  <a href="#top" data-section="about" class="dock__item" aria-label="Home">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm146.5-204.5Q340-521 340-580t40.5-99.5Q421-720 480-720t99.5 40.5Q620-639 620-580t-40.5 99.5Q539-440 480-440t-99.5-40.5ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm100-95.5q47-15.5 86-44.5-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160q53 0 100-15.5ZM523-537q17-17 17-43t-17-43q-17-17-43-17t-43 17q-17 17-17 43t17 43q17 17 43 17t43-17Zm-43-43Zm0 360Z"/></svg>
+    <span>Profile</span>
+  </a>
+  <a href="#projects" data-section="projects" class="dock__item" aria-label="Projects">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M160-240v-480 520-40Zm0 80q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h240l80 80h320q33 0 56.5 23.5T880-640v200h-80v-200H447l-80-80H160v480h200v80H160ZM584-56 440-200l144-144 56 57-87 87 87 87-56 57Zm192 0-56-57 87-87-87-87 56-57 144 144L776-56Z"/></svg>
+    <span>Projects</span>
+  </a>
+  <a href="#experience" data-section="experience" class="dock__item" aria-label="Experience">
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M160-200v-440 440-15 15Zm0 80q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v171q-18-13-38-22.5T800-508v-132H160v440h283q3 21 9 41t15 39H160Zm240-600h160v-80H400v80ZM578.5-98.5Q520-157 520-240t58.5-141.5Q637-440 720-440t141.5 58.5Q920-323 920-240T861.5-98.5Q803-40 720-40T578.5-98.5ZM740-248v-112h-40v128l86 86 28-28-74-74Z"/></svg>    <span>Experience</span>
+  </a>
+  <a href="#skills" data-section="skills" class="dock__item" aria-label="Skills">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M480-400 40-640l440-240 440 240-440 240Zm0 160L63-467l84-46 333 182 333-182 84 46-417 227Zm0 160L63-307l84-46 333 182 333-182 84 46L480-80Zm0-411 273-149-273-149-273 149 273 149Zm0-149Z"/></svg>
+    <span>Skills</span>
+  </a>
+  <a href="#certifications" data-section="certifications" class="dock__item" aria-label="Certifications">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m387-412 35-114-92-74h114l36-112 36 112h114l-93 74 35 114-92-71-93 71ZM240-40v-309q-38-42-59-96t-21-115q0-134 93-227t227-93q134 0 227 93t93 227q0 61-21 115t-59 96v309l-240-80-240 80Zm410-350q70-70 70-170t-70-170q-70-70-170-70t-170 70q-70 70-70 170t70 170q70 70 170 70t170-70ZM320-159l160-41 160 41v-124q-35 20-75.5 31.5T480-240q-44 0-84.5-11.5T320-283v124Zm160-62Z"/></svg>
+    <span>Certs</span>
+  </a>
+  <a href="#contact" data-section="contact" class="dock__item" aria-label="Contact">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+    <span>Contact</span>
+  </a>
+</nav>
+
+<script src="js/portfolio-data.js"></script>
+<script src="js/portfolio.js"></script>
+</body>
+</html>
